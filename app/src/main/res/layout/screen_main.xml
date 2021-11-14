@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.MainScreen">
+
+    <FrameLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/baseColor"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:adjustViewBounds="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Events"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/airplaneModeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#5D5C60"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Airplane mode:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/airplaneModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bluetoothLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#335083"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Bluetooth: "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/bluetoothSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/screenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2F917C"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Screen: "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/screenSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/powerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#076C8D"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Power: "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/powerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/batteryLowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#123161"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Battery Low: "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/batteryLowSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/shutDownLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#274362"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Shutdown: "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/shutDownSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/timeZoneChanged"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#494B79"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Timezone: "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/timeZoneSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cameraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#084949"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Camera: "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/cameraSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="14sp"
+            app:colorBorder="@color/baseColor"
+            app:on="true" />
+    </FrameLayout>
+
+</LinearLayout>
