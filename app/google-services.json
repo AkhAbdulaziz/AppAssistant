@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "480536127761",
+    "project_id": "appassistant-5f860",
+    "storage_bucket": "appassistant-5f860.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480536127761:android:e9596984fc6061644984b0",
+        "android_client_info": {
+          "package_name": "uz.gita.appassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480536127761-5n3elcehfeqrhrsekf1j8v65ultt67ls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGpnw2EYQXq4O7UNdaR0SU4-WsvDqYOfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480536127761-5n3elcehfeqrhrsekf1j8v65ultt67ls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

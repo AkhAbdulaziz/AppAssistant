@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
+        throw IllegalArgumentException("Bu bizning execption")
+
         val navHost = supportFragmentManager.findFragmentById(R.id.navHost) as NavHostFragment
         val graph = navHost.navController.navInflater.inflate(R.navigation.app_nav)
         navHost.navController.graph = graph

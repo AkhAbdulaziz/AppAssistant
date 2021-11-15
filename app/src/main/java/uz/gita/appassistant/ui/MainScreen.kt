@@ -24,8 +24,6 @@ class MainScreen : Fragment(R.layout.screen_main_nav),
     private val binding by viewBinding(ScreenMainNavBinding::bind)
     private val viewModel by viewModels<MainViewModel>()
 
-    /*    private lateinit var tts: TextToSpeech*/
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) = binding.scope {
         super.onViewCreated(view, savedInstanceState)
         setScreenOpenedConnections()

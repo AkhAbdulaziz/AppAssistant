@@ -40,9 +40,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#5D5C60"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -52,8 +52,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Airplane mode:"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/airplaneModeSwitch"
@@ -64,6 +65,14 @@
             app:colorBorder="@color/baseColor"
             app:on="true" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.7"
+            android:layout_gravity="bottom"
+            android:background="@color/greyColor"
+            android:paddingTop="16dp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -71,9 +80,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#335083"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -84,8 +93,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Bluetooth: "
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/bluetoothSwitch"
@@ -96,6 +106,14 @@
             app:colorBorder="@color/baseColor"
             app:on="true" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.7"
+            android:layout_gravity="bottom"
+            android:background="@color/greyColor"
+            android:paddingTop="16dp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -103,9 +121,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#2F917C"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -115,8 +133,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Screen: "
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/screenSwitch"
@@ -127,6 +146,14 @@
             app:colorBorder="@color/baseColor"
             app:on="true" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.7"
+            android:layout_gravity="bottom"
+            android:background="@color/greyColor"
+            android:paddingTop="16dp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -134,9 +161,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#076C8D"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -146,8 +173,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Power: "
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/powerSwitch"
@@ -158,6 +186,14 @@
             app:colorBorder="@color/baseColor"
             app:on="true" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.7"
+            android:layout_gravity="bottom"
+            android:background="@color/greyColor"
+            android:paddingTop="16dp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -165,9 +201,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#123161"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -177,8 +213,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Battery Low: "
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/batteryLowSwitch"
@@ -189,6 +226,14 @@
             app:colorBorder="@color/baseColor"
             app:on="true" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.7"
+            android:layout_gravity="bottom"
+            android:background="@color/greyColor"
+            android:paddingTop="16dp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -196,9 +241,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#274362"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -208,8 +253,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Shutdown: "
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/shutDownSwitch"
@@ -220,6 +266,14 @@
             app:colorBorder="@color/baseColor"
             app:on="true" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.7"
+            android:layout_gravity="bottom"
+            android:background="@color/greyColor"
+            android:paddingTop="16dp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -227,9 +281,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#494B79"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -239,8 +293,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Timezone: "
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/timeZoneSwitch"
@@ -251,6 +306,14 @@
             app:colorBorder="@color/baseColor"
             app:on="true" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.7"
+            android:layout_gravity="bottom"
+            android:background="@color/greyColor"
+            android:paddingTop="16dp" />
+
     </FrameLayout>
 
     <FrameLayout
@@ -258,9 +321,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#084949"
         android:gravity="center_vertical"
-        android:padding="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title1">
@@ -270,8 +333,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left|center"
             android:text="Camera: "
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/baseColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/cameraSwitch"

@@ -51,7 +51,7 @@ class ForegroundService : Service() {
 
     private val notification by lazy {
         NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(R.drawable.app_icon)
             .setSilent(true)
             .setContentTitle("App assistant")
             .setContentText("Assistants announce you app events")
@@ -91,29 +91,11 @@ class ForegroundService : Service() {
                         mediaPlayer =
                             MediaPlayer.create(this, R.raw.voice_bluetooth_disconnected)
                         mediaPlayer.start()
-//                    speak("Bluetooth turned off")
                     }
                     EventEnums.Bluetooth_Turning_On -> {
                         mediaPlayer =
                             MediaPlayer.create(this, R.raw.voice_bluetooth_connected)
                         mediaPlayer.start()
-                        /* lateinit var tts: TextToSpeech
-                         tts = TextToSpeech(this) { status ->
-                             if (status == TextToSpeech.SUCCESS) {
-                                 val result = tts.setLanguage(Locale.ENGLISH)
-
-                                 if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                                     Log.d("TTT", "Language not supported")
-                                 }
-                             } else {
-                                 Log.d("TTT", "Initialization is not Succeed")
-                             }
-                             tts.speak("Bluetooth connected", TextToSpeech.QUEUE_FLUSH, null)
-                         }*/
-                        /*
-                        speak("Bluetooth connected")*/
-                        /* mediaPlayer = MediaPlayer.create(this, R.raw.bluetooth_turned_on)
-                     mediaPlayer.start()*/
                     }
                 }
             }
@@ -208,34 +190,7 @@ class ForegroundService : Service() {
             timeZoneChangedReceiver,
             IntentFilter(Intent.ACTION_TIMEZONE_CHANGED)
         )
-
-        /*   Permissions.check(this, android.Manifest.permission.CALL_PHONE, null,
-               object : PermissionHandler() {
-                   override fun onGranted() {
-                       callReceiver = CallReceiver()
-                       callReceiver.setListener { phoneNumber ->
-                           Log.d("PPP", "show number")
-                           showToast(phoneNumber)
-                       }
-                   }
-               }
-           )*/
     }
-
-    /*   private fun speak(text: String) {
-         tts = TextToSpeech(requireContext()) { status ->
-             if (status == TextToSpeech.SUCCESS) {
-                 val result = tts.setLanguage(Locale.ENGLISH)
-
-                 if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                     Log.d("TTT", "Language not supported")
-                 }
-             } else {
-                 Log.d("TTT", "Initialization is not Succeed")
-             }
-             tts.speak(text, TextToSpeech.QUEUE_FLUSH, null)
-         }
-     }*/
 
     override fun onDestroy() {
         super.onDestroy()
